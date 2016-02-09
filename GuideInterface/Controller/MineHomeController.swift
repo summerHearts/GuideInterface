@@ -6,6 +6,8 @@
 //  Copyright © 2016年 上海乐住信息技术有限公司. All rights reserved.
 //
 
+
+
 private let kScreenWidth     = UIScreen .mainScreen().bounds.size.width
 
 private let kScreenHeight    = UIScreen .mainScreen().bounds.size.height
@@ -55,13 +57,14 @@ class MineHomeController: BaseTableViewController {
     }
     
     func tappedBalance(button:UIButton){
-        print(button.titleForState(.Normal))
+        
+        let detailCtrl = UserLoginViewController(nibName: "UserLoginViewController", bundle: nil);
+        detailCtrl.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(detailCtrl, animated: true)
     }
     
     func tappedComment(button:UIButton){
-        self.navigationController?.popToRootViewControllerAnimated(false)
-        let appDelegate = UIApplication .sharedApplication().delegate as!AppDelegate
-        let array:[UIViewController] =  appDelegate.mainTabBarController!.viewControllers!
+        
        
     }
     func tappedMessage(button:UIButton){

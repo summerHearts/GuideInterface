@@ -37,6 +37,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = MainTabBarController().tabBarControllers
             
         }
+        
+        UMSocialData.setAppKey("54238dc5fd98c501b5028d70")
+        UMSocialSinaHandler.openSSOWithRedirectURL("http://sns.whalecloud.com/sina2/callback")
+        
+        UMSocialQQHandler.setQQWithAppId("1103695854", appKey: "Qx34CKDOmDxksgT9", url: "http://www.umeng.com/social")
+        
+        //检测用户是否登录
+        if userDefaults.stringForKey("user_client_id") != nil{
+            loginState = true
+            userWeibo.platform_id = 1
+            userWeibo.face = userDefaults.stringForKey("face")!
+            userWeibo.nickname = userDefaults.stringForKey("username")!
+            userWeibo.user_client_id = userDefaults.stringForKey("user_client_id")!
+        }
         self.window?.makeKeyAndVisible()
         return true
     }
