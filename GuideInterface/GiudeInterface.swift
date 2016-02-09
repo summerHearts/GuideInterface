@@ -16,7 +16,7 @@ private let kScreenHeight    = UIScreen .mainScreen().bounds.size.height
 
 private let gNavgationHeight = UIScreen .mainScreen().bounds.size.height
 
-class GiudeInterface: UIViewController,UIScrollViewDelegate {
+class GiudeInterface: BaseViewController,UIScrollViewDelegate {
     
     var startLoadFirst:(()->Void)?
     
