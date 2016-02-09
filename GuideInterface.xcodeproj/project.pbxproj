@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		231D98CF1C6A0331002789A2 /* MainHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98CE1C6A0331002789A2 /* MainHomeController.swift */; };
-		231D98D11C6A034D002789A2 /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98D01C6A034D002789A2 /* OrderListController.swift */; };
-		231D98D31C6A035D002789A2 /* MineHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98D21C6A035D002789A2 /* MineHomeController.swift */; };
-		231D98D51C6A0391002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98D41C6A0391002789A2 /* BaseViewController.swift */; };
-		231D98D71C6A0435002789A2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98D61C6A0435002789A2 /* MainTabBarController.swift */; };
 		231D98E21C6A108D002789A2 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E11C6A108D002789A2 /* Define.swift */; };
-		231D98E41C6A1C74002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E31C6A1C74002789A2 /* BaseTableViewController.swift */; };
+		231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E51C6A2086002789A2 /* BaseTableViewController.swift */; };
+		231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E61C6A2086002789A2 /* BaseViewController.swift */; };
+		231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98EC1C6A2109002789A2 /* GiudeInterface.swift */; };
+		231D98F31C6A2109002789A2 /* MainHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98ED1C6A2109002789A2 /* MainHomeController.swift */; };
+		231D98F41C6A2109002789A2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98EE1C6A2109002789A2 /* MainTabBarController.swift */; };
+		231D98F51C6A2109002789A2 /* MineHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98EF1C6A2109002789A2 /* MineHomeController.swift */; };
+		231D98F61C6A2109002789A2 /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98F01C6A2109002789A2 /* OrderListController.swift */; };
+		231D98F71C6A2109002789A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98F11C6A2109002789A2 /* ViewController.swift */; };
 		239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F861C68C10100A99716 /* AppDelegate.swift */; };
-		239D5F891C68C10100A99716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F881C68C10100A99716 /* ViewController.swift */; };
 		239D5F8C1C68C10100A99716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F8A1C68C10100A99716 /* Main.storyboard */; };
 		239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F8D1C68C10100A99716 /* GuideInterface.xcdatamodeld */; };
 		239D5F911C68C10100A99716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F901C68C10100A99716 /* Assets.xcassets */; };
 		239D5F941C68C10100A99716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F921C68C10100A99716 /* LaunchScreen.storyboard */; };
 		239D5F9F1C68C10100A99716 /* GuideInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F9E1C68C10100A99716 /* GuideInterfaceTests.swift */; };
 		239D5FAA1C68C10100A99716 /* GuideInterfaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5FA91C68C10100A99716 /* GuideInterfaceUITests.swift */; };
-		239D5FB81C68C12700A99716 /* GiudeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5FB71C68C12700A99716 /* GiudeInterface.swift */; };
 		239D5FC21C68C5C100A99716 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239D5FBA1C68C5C100A99716 /* 1.jpg */; };
 		239D5FC31C68C5C100A99716 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239D5FBB1C68C5C100A99716 /* 2.jpg */; };
 		239D5FC41C68C5C100A99716 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239D5FBC1C68C5C100A99716 /* 3.jpg */; };
@@ -52,16 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		231D98CE1C6A0331002789A2 /* MainHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHomeController.swift; sourceTree = "<group>"; };
-		231D98D01C6A034D002789A2 /* OrderListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
-		231D98D21C6A035D002789A2 /* MineHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHomeController.swift; sourceTree = "<group>"; };
-		231D98D41C6A0391002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		231D98D61C6A0435002789A2 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		231D98E11C6A108D002789A2 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Define.swift; path = ../Define.swift; sourceTree = "<group>"; };
-		231D98E31C6A1C74002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		231D98E51C6A2086002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		231D98E61C6A2086002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		231D98EC1C6A2109002789A2 /* GiudeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiudeInterface.swift; sourceTree = "<group>"; };
+		231D98ED1C6A2109002789A2 /* MainHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHomeController.swift; sourceTree = "<group>"; };
+		231D98EE1C6A2109002789A2 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		231D98EF1C6A2109002789A2 /* MineHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHomeController.swift; sourceTree = "<group>"; };
+		231D98F01C6A2109002789A2 /* OrderListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
+		231D98F11C6A2109002789A2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		239D5F831C68C10100A99716 /* GuideInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D5F861C68C10100A99716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		239D5F881C68C10100A99716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		239D5F8B1C68C10100A99716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		239D5F8E1C68C10100A99716 /* GuideInterface.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuideInterface.xcdatamodel; sourceTree = "<group>"; };
 		239D5F901C68C10100A99716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		239D5FA51C68C10100A99716 /* GuideInterfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideInterfaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D5FA91C68C10100A99716 /* GuideInterfaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideInterfaceUITests.swift; sourceTree = "<group>"; };
 		239D5FAB1C68C10100A99716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		239D5FB71C68C12700A99716 /* GiudeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiudeInterface.swift; sourceTree = "<group>"; };
 		239D5FBA1C68C5C100A99716 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		239D5FBB1C68C5C100A99716 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		239D5FBC1C68C5C100A99716 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -116,9 +116,38 @@
 		231D98E01C6A107F002789A2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				231D98E51C6A2086002789A2 /* BaseTableViewController.swift */,
+				231D98E61C6A2086002789A2 /* BaseViewController.swift */,
 				231D98E11C6A108D002789A2 /* Define.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		231D98E91C6A20E0002789A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				231D98EC1C6A2109002789A2 /* GiudeInterface.swift */,
+				231D98ED1C6A2109002789A2 /* MainHomeController.swift */,
+				231D98EE1C6A2109002789A2 /* MainTabBarController.swift */,
+				231D98EF1C6A2109002789A2 /* MineHomeController.swift */,
+				231D98F01C6A2109002789A2 /* OrderListController.swift */,
+				231D98F11C6A2109002789A2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		231D98EA1C6A20E0002789A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		231D98EB1C6A20E0002789A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		239D5F7A1C68C10100A99716 = {
@@ -146,17 +175,12 @@
 		239D5F851C68C10100A99716 /* GuideInterface */ = {
 			isa = PBXGroup;
 			children = (
+				231D98E91C6A20E0002789A2 /* Controller */,
+				231D98EA1C6A20E0002789A2 /* Model */,
+				231D98EB1C6A20E0002789A2 /* View */,
 				231D98E01C6A107F002789A2 /* Base */,
 				239D5FB91C68C5AE00A99716 /* Image */,
 				239D5F861C68C10100A99716 /* AppDelegate.swift */,
-				239D5F881C68C10100A99716 /* ViewController.swift */,
-				239D5FB71C68C12700A99716 /* GiudeInterface.swift */,
-				231D98CE1C6A0331002789A2 /* MainHomeController.swift */,
-				231D98D01C6A034D002789A2 /* OrderListController.swift */,
-				231D98D21C6A035D002789A2 /* MineHomeController.swift */,
-				231D98D41C6A0391002789A2 /* BaseViewController.swift */,
-				231D98E31C6A1C74002789A2 /* BaseTableViewController.swift */,
-				231D98D61C6A0435002789A2 /* MainTabBarController.swift */,
 				239D5F8A1C68C10100A99716 /* Main.storyboard */,
 				239D5F901C68C10100A99716 /* Assets.xcassets */,
 				239D5F921C68C10100A99716 /* LaunchScreen.storyboard */,
@@ -407,17 +431,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239D5F891C68C10100A99716 /* ViewController.swift in Sources */,
+				231D98F61C6A2109002789A2 /* OrderListController.swift in Sources */,
 				239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */,
-				239D5FB81C68C12700A99716 /* GiudeInterface.swift in Sources */,
+				231D98F31C6A2109002789A2 /* MainHomeController.swift in Sources */,
+				231D98F41C6A2109002789A2 /* MainTabBarController.swift in Sources */,
+				231D98F71C6A2109002789A2 /* ViewController.swift in Sources */,
+				231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */,
+				231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */,
 				239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */,
-				231D98D31C6A035D002789A2 /* MineHomeController.swift in Sources */,
-				231D98D71C6A0435002789A2 /* MainTabBarController.swift in Sources */,
-				231D98D51C6A0391002789A2 /* BaseViewController.swift in Sources */,
-				231D98D11C6A034D002789A2 /* OrderListController.swift in Sources */,
+				231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */,
 				231D98E21C6A108D002789A2 /* Define.swift in Sources */,
-				231D98E41C6A1C74002789A2 /* BaseTableViewController.swift in Sources */,
-				231D98CF1C6A0331002789A2 /* MainHomeController.swift in Sources */,
+				231D98F51C6A2109002789A2 /* MineHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
