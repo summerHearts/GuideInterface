@@ -78,7 +78,7 @@ class MainTabBarController: UITabBarController {
         mineHomeVC.view.backgroundColor = UIColor.whiteColor()
         mineHomeVC.title = "我的"
         nav3.viewControllers = [mineHomeVC]
-        
+        nav3.navigationBarHidden=true
     
         let tabs = UITabBarController()
         tabs.viewControllers = [nav1,nav2,nav3]

@@ -13,12 +13,12 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainTabBarController:MainTabBarController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         self.window?.backgroundColor = UIColor.whiteColor()
-        
+        mainTabBarController = MainTabBarController()
         let started = NSUserDefaults.standardUserDefaults().valueForKey("started")
         if started == nil {
             let vc = GiudeInterface()
@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             vc.startLoadFirst = {
                 () -> Void in
+                
                 self.window?.rootViewController = MainTabBarController().tabBarControllers
                 
                 let userDefaults = NSUserDefaults.standardUserDefaults()

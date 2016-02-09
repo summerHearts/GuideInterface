@@ -23,7 +23,6 @@ class MineHomeController: BaseTableViewController {
         super.viewDidLoad()
         self.dataSource = NSMutableArray()
         self.dataSource .addObject([["image":"minehome_collection","name":"我的酒店"]])
-        self.dataSource .addObject([["image":"minehome_collection","name":"我的酒店"]])
 
         self.dataSource .addObject([["image":"minehome_coupon","name":"优惠券"]])
         
@@ -44,12 +43,30 @@ class MineHomeController: BaseTableViewController {
         self.mineUserInfoView = NSBundle.mainBundle().loadNibNamed("MineUserInfoView", owner: nil, options: nil).first as? MineUserInfoView
         self.mineUserInfoView.frame = CGRectMake(0, 0, kScreenWidth, 249)
         self.mineTableView.tableHeaderView = self.mineUserInfoView
-        
-        self.fd_prefersNavigationBarHidden = true
-
+        self.mineUserInfoView.userNameLabel.text = "13651981343"
+        self.mineUserInfoView.userStatusLabel.text = "已登录"
+        self .addTagAction();
     }
     
+    func addTagAction(){
+        self.mineUserInfoView.balanceBtn .addTarget(self, action:Selector("tappedBalance:"), forControlEvents: UIControlEvents.TouchUpInside)
+          self.mineUserInfoView.commentBtn .addTarget(self, action:Selector("tappedComment:"), forControlEvents: UIControlEvents.TouchUpInside)
+        self.mineUserInfoView.messageBtn .addTarget(self, action:Selector("tappedMessage:"), forControlEvents: UIControlEvents.TouchUpInside)
+    }
     
+    func tappedBalance(button:UIButton){
+        print(button.titleForState(.Normal))
+    }
+    
+    func tappedComment(button:UIButton){
+        self.navigationController?.popToRootViewControllerAnimated(false)
+        let appDelegate = UIApplication .sharedApplication().delegate as!AppDelegate
+        let array:[UIViewController] =  appDelegate.mainTabBarController!.viewControllers!
+       
+    }
+    func tappedMessage(button:UIButton){
+        print(button.titleForState(.Normal))
+    }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.dataSource.count
     }
