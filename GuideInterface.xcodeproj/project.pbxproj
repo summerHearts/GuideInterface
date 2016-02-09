@@ -16,6 +16,12 @@
 		231D98F51C6A2109002789A2 /* MineHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98EF1C6A2109002789A2 /* MineHomeController.swift */; };
 		231D98F61C6A2109002789A2 /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98F01C6A2109002789A2 /* OrderListController.swift */; };
 		231D98F71C6A2109002789A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98F11C6A2109002789A2 /* ViewController.swift */; };
+		231D98FC1C6A2750002789A2 /* MineUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231D98FB1C6A2750002789A2 /* MineUserInfoView.xib */; };
+		231D98FE1C6A282C002789A2 /* MineUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98FD1C6A282C002789A2 /* MineUserInfoView.swift */; };
+		231D99001C6A2E5B002789A2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98FF1C6A2E5B002789A2 /* UIViewExtension.swift */; };
+		231D99021C6A40BE002789A2 /* MinePersonalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D99011C6A40BE002789A2 /* MinePersonalCell.swift */; };
+		231D99041C6A40E5002789A2 /* MinePersonalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231D99031C6A40E5002789A2 /* MinePersonalCell.xib */; };
+		231D99091C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 231D99081C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F861C68C10100A99716 /* AppDelegate.swift */; };
 		239D5F8C1C68C10100A99716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F8A1C68C10100A99716 /* Main.storyboard */; };
 		239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F8D1C68C10100A99716 /* GuideInterface.xcdatamodeld */; };
@@ -61,6 +67,14 @@
 		231D98EF1C6A2109002789A2 /* MineHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHomeController.swift; sourceTree = "<group>"; };
 		231D98F01C6A2109002789A2 /* OrderListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
 		231D98F11C6A2109002789A2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		231D98F81C6A24E8002789A2 /* GuideInterface-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuideInterface-Bridging-Header.h"; sourceTree = "<group>"; };
+		231D98FB1C6A2750002789A2 /* MineUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineUserInfoView.xib; sourceTree = "<group>"; };
+		231D98FD1C6A282C002789A2 /* MineUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineUserInfoView.swift; sourceTree = "<group>"; };
+		231D98FF1C6A2E5B002789A2 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		231D99011C6A40BE002789A2 /* MinePersonalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinePersonalCell.swift; sourceTree = "<group>"; };
+		231D99031C6A40E5002789A2 /* MinePersonalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinePersonalCell.xib; sourceTree = "<group>"; };
+		231D99071C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		231D99081C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		239D5F831C68C10100A99716 /* GuideInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D5F861C68C10100A99716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239D5F8B1C68C10100A99716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +133,8 @@
 				231D98E51C6A2086002789A2 /* BaseTableViewController.swift */,
 				231D98E61C6A2086002789A2 /* BaseViewController.swift */,
 				231D98E11C6A108D002789A2 /* Define.swift */,
+				231D98FF1C6A2E5B002789A2 /* UIViewExtension.swift */,
+				231D98F81C6A24E8002789A2 /* GuideInterface-Bridging-Header.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -146,8 +162,29 @@
 		231D98EB1C6A20E0002789A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				231D98FB1C6A2750002789A2 /* MineUserInfoView.xib */,
+				231D98FD1C6A282C002789A2 /* MineUserInfoView.swift */,
+				231D99031C6A40E5002789A2 /* MinePersonalCell.xib */,
+				231D99011C6A40BE002789A2 /* MinePersonalCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		231D99051C6A4786002789A2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				231D99061C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		231D99061C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				231D99071C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.h */,
+				231D99081C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = "UINavigationController+FDFullscreenPopGesture";
 			sourceTree = "<group>";
 		};
 		239D5F7A1C68C10100A99716 = {
@@ -175,6 +212,7 @@
 		239D5F851C68C10100A99716 /* GuideInterface */ = {
 			isa = PBXGroup;
 			children = (
+				231D99051C6A4786002789A2 /* Tool */,
 				231D98E91C6A20E0002789A2 /* Controller */,
 				231D98EA1C6A20E0002789A2 /* Model */,
 				231D98EB1C6A20E0002789A2 /* View */,
@@ -348,9 +386,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231D98FC1C6A2750002789A2 /* MineUserInfoView.xib in Resources */,
 				239D5FC91C68C5C100A99716 /* 8.jpg in Resources */,
 				239D5FC71C68C5C100A99716 /* 6.jpg in Resources */,
 				239D5F941C68C10100A99716 /* LaunchScreen.storyboard in Resources */,
+				231D99041C6A40E5002789A2 /* MinePersonalCell.xib in Resources */,
 				239D5FC61C68C5C100A99716 /* 5.jpg in Resources */,
 				239D5FC51C68C5C100A99716 /* 4.jpg in Resources */,
 				239D5FC21C68C5C100A99716 /* 1.jpg in Resources */,
@@ -431,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231D99091C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				231D98F61C6A2109002789A2 /* OrderListController.swift in Sources */,
 				239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */,
 				231D98F31C6A2109002789A2 /* MainHomeController.swift in Sources */,
@@ -439,6 +480,9 @@
 				231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */,
 				231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */,
 				239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */,
+				231D99021C6A40BE002789A2 /* MinePersonalCell.swift in Sources */,
+				231D99001C6A2E5B002789A2 /* UIViewExtension.swift in Sources */,
+				231D98FE1C6A282C002789A2 /* MineUserInfoView.swift in Sources */,
 				231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */,
 				231D98E21C6A108D002789A2 /* Define.swift in Sources */,
 				231D98F51C6A2109002789A2 /* MineHomeController.swift in Sources */,
@@ -584,11 +628,14 @@
 			baseConfigurationReference = 621F40C9964C74294AC3474D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GuideInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lezhu.imike.GuideInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GuideInterface/Base/GuideInterface-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -597,11 +644,13 @@
 			baseConfigurationReference = BD05E4D7961E510049C74E19 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GuideInterface/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lezhu.imike.GuideInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GuideInterface/Base/GuideInterface-Bridging-Header.h";
 			};
 			name = Release;
 		};

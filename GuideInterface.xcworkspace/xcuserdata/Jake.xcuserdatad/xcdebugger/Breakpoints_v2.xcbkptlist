@@ -2,4 +2,118 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuideInterface/Controller/MineHomeController.swift"
+            timestampString = "476728241.400434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuideInterface/Controller/MineHomeController.swift"
+            timestampString = "476728241.400434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuideInterface/Tool/UINavigationController+FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"
+            timestampString = "476727789.42948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "-fd_setupViewControllerBasedNavigationBarAppearanceIfNeeded:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuideInterface/Tool/UINavigationController+FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"
+            timestampString = "476727809.595777"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "-fd_setupViewControllerBasedNavigationBarAppearanceIfNeeded:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuideInterface/Tool/UINavigationController+FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"
+            timestampString = "476727810.533897"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "-fd_setupViewControllerBasedNavigationBarAppearanceIfNeeded:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UINavigationController(FDFullscreenPopGesture) fd_setupViewControllerBasedNavigationBarAppearanceIfNeeded:]"
+                  moduleName = "GuideInterface"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jake/Desktop/GuideInterface/GuideInterface/Tool/UINavigationController+FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"
+                  timestampString = "476728241.493168"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "181"
+                  endingLineNumber = "181"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__109-[UINavigationController(FDFullscreenPopGesture) fd_setupViewControllerBasedNavigationBarAppearanceIfNeeded:]_block_invoke"
+                  moduleName = "GuideInterface"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jake/Desktop/GuideInterface/GuideInterface/Tool/UINavigationController+FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.m"
+                  timestampString = "476728241.493603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "181"
+                  endingLineNumber = "181"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
