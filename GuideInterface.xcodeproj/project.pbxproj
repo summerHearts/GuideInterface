@@ -13,6 +13,7 @@
 		231D98D51C6A0391002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98D41C6A0391002789A2 /* BaseViewController.swift */; };
 		231D98D71C6A0435002789A2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98D61C6A0435002789A2 /* MainTabBarController.swift */; };
 		231D98E21C6A108D002789A2 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E11C6A108D002789A2 /* Define.swift */; };
+		231D98E41C6A1C74002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E31C6A1C74002789A2 /* BaseTableViewController.swift */; };
 		239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F861C68C10100A99716 /* AppDelegate.swift */; };
 		239D5F891C68C10100A99716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F881C68C10100A99716 /* ViewController.swift */; };
 		239D5F8C1C68C10100A99716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F8A1C68C10100A99716 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		231D98D41C6A0391002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		231D98D61C6A0435002789A2 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		231D98E11C6A108D002789A2 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Define.swift; path = ../Define.swift; sourceTree = "<group>"; };
+		231D98E31C6A1C74002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		239D5F831C68C10100A99716 /* GuideInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D5F861C68C10100A99716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239D5F881C68C10100A99716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				231D98D01C6A034D002789A2 /* OrderListController.swift */,
 				231D98D21C6A035D002789A2 /* MineHomeController.swift */,
 				231D98D41C6A0391002789A2 /* BaseViewController.swift */,
+				231D98E31C6A1C74002789A2 /* BaseTableViewController.swift */,
 				231D98D61C6A0435002789A2 /* MainTabBarController.swift */,
 				239D5F8A1C68C10100A99716 /* Main.storyboard */,
 				239D5F901C68C10100A99716 /* Assets.xcassets */,
@@ -413,6 +416,7 @@
 				231D98D51C6A0391002789A2 /* BaseViewController.swift in Sources */,
 				231D98D11C6A034D002789A2 /* OrderListController.swift in Sources */,
 				231D98E21C6A108D002789A2 /* Define.swift in Sources */,
+				231D98E41C6A1C74002789A2 /* BaseTableViewController.swift in Sources */,
 				231D98CF1C6A0331002789A2 /* MainHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
