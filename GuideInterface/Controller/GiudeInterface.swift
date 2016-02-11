@@ -10,11 +10,6 @@
 import UIKit
 import Foundation
 
-private let kScreenWidth     = UIScreen .mainScreen().bounds.size.width
-
-private let kScreenHeight    = UIScreen .mainScreen().bounds.size.height
-
-private let gNavgationHeight = UIScreen .mainScreen().bounds.size.height
 
 class GiudeInterface: BaseViewController,UIScrollViewDelegate {
     
@@ -26,7 +21,7 @@ class GiudeInterface: BaseViewController,UIScrollViewDelegate {
     
     var mutableArray: NSMutableArray?
     
-    let navH = CGFloat(Float(gNavgationHeight))
+    let navH = CGFloat(Float(64))
     
     override func viewDidLoad() {
         self.automaticallyAdjustsScrollViewInsets = false
@@ -38,18 +33,18 @@ class GiudeInterface: BaseViewController,UIScrollViewDelegate {
     func initScrollView(){
         let arr = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"]
         if self.scrollView == nil {
-            self.scrollView = UIScrollView.init(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight))
+            self.scrollView = UIScrollView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
             self.scrollView.delegate = self
             self.scrollView.pagingEnabled = true
             self.scrollView.showsHorizontalScrollIndicator = false
             self.scrollView.showsVerticalScrollIndicator = false
             self.view.addSubview(self.scrollView)
             
-            self.scrollView.contentSize = CGSizeMake(kScreenWidth * CGFloat(Float(arr.count)), kScreenHeight)
+            self.scrollView.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width * CGFloat(Float(arr.count)), UIScreen.mainScreen().bounds.size.height)
             
             for var i = 0 ;i < arr.count ; i++ {
                 let index = CGFloat(Float(i))
-                let imgView = UIImageView.init(frame: CGRectMake(index * kScreenWidth, 0, kScreenWidth, kScreenHeight))
+                let imgView = UIImageView.init(frame: CGRectMake(index * UIScreen.mainScreen().bounds.size.width, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
                 imgView.image = UIImage(named: arr[i])
                 self.scrollView.addSubview(imgView)
                 
@@ -57,7 +52,7 @@ class GiudeInterface: BaseViewController,UIScrollViewDelegate {
                     imgView.userInteractionEnabled = true
                     
                     let button = UIButton.init(type: UIButtonType.Custom)
-                    button.frame = CGRectMake((kScreenWidth - 200) / 2, kScreenHeight - 94, 200, 45)
+                    button.frame = CGRectMake((UIScreen.mainScreen().bounds.size.width - 200) / 2, UIScreen.mainScreen().bounds.size.height - 94, 200, 45)
                     button.setTitle("立即体验", forState: UIControlState.Normal)
                     button.backgroundColor = UIColor.orangeColor()
                     button.titleLabel?.font = UIFont.systemFontOfSize(18)
@@ -70,7 +65,7 @@ class GiudeInterface: BaseViewController,UIScrollViewDelegate {
         }
         
         if self.pageControl == nil {
-            self.pageControl = UIPageControl.init(frame: CGRectMake((kScreenWidth - 150) / 2, kScreenHeight - 45, 150, 30))
+            self.pageControl = UIPageControl.init(frame: CGRectMake((UIScreen.mainScreen().bounds.size.width - 150) / 2, UIScreen.mainScreen().bounds.size.height - 45, 150, 30))
             self.pageControl.numberOfPages = arr.count
             self.view.addSubview(self.pageControl)
             self.pageControl.pageIndicatorTintColor = UIColor.whiteColor()
@@ -85,7 +80,7 @@ class GiudeInterface: BaseViewController,UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
-        let index = scrollView.contentOffset.x / kScreenWidth
+        let index = scrollView.contentOffset.x / UIScreen.mainScreen().bounds.size.width
         self.pageControl.currentPage = Int(index)
     }
 

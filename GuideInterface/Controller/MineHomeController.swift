@@ -7,13 +7,6 @@
 //
 
 
-
-private let kScreenWidth     = UIScreen .mainScreen().bounds.size.width
-
-private let kScreenHeight    = UIScreen .mainScreen().bounds.size.height
-
-private let gNavgationHeight = UIScreen .mainScreen().bounds.size.height
-
 private let mineHomeCellIdentifier = "mineUserInfoCellIdentifier"
 import UIKit
 
@@ -40,7 +33,7 @@ class MineHomeController: BaseTableViewController {
         self.view .addSubview(self.mineTableView)
         
         self.mineUserInfoView = NSBundle.mainBundle().loadNibNamed("MineUserInfoView", owner: nil, options: nil).first as? MineUserInfoView
-        self.mineUserInfoView.frame = CGRectMake(0, 0, kScreenWidth, 249)
+        self.mineUserInfoView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, 249)
         self.mineTableView.tableHeaderView = self.mineUserInfoView
         self.mineUserInfoView.userNameLabel.text = "13651981343"
         self.mineUserInfoView.userStatusLabel.text = "已登录"

@@ -64,6 +64,8 @@
 		231D997B1C6A6344002789A2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D997A1C6A6344002789A2 /* libiconv.tbd */; };
 		231D997D1C6A634D002789A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D997C1C6A634D002789A2 /* Security.framework */; };
 		235C788A1C6C606A001491EF /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C78891C6C606A001491EF /* YSSegmentedControl.swift */; };
+		235C78941C6C65A5001491EF /* OrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235C78931C6C65A5001491EF /* OrderListCell.xib */; };
+		235C78961C6C65BF001491EF /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C78951C6C65BF001491EF /* OrderListCell.swift */; };
 		239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F861C68C10100A99716 /* AppDelegate.swift */; };
 		239D5F8C1C68C10100A99716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F8A1C68C10100A99716 /* Main.storyboard */; };
 		239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F8D1C68C10100A99716 /* GuideInterface.xcdatamodeld */; };
@@ -176,6 +178,9 @@
 		231D997A1C6A6344002789A2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		231D997C1C6A634D002789A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		235C78891C6C606A001491EF /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
+		235C78931C6C65A5001491EF /* OrderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderListCell.xib; sourceTree = "<group>"; };
+		235C78951C6C65BF001491EF /* OrderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
+		235C78971C6C69E0001491EF /* GuideInterface.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideInterface.pch; sourceTree = "<group>"; };
 		239D5F831C68C10100A99716 /* GuideInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D5F861C68C10100A99716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239D5F8B1C68C10100A99716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -249,6 +254,7 @@
 				231D98E51C6A2086002789A2 /* BaseTableViewController.swift */,
 				231D98E61C6A2086002789A2 /* BaseViewController.swift */,
 				231D98E11C6A108D002789A2 /* Define.swift */,
+				235C78971C6C69E0001491EF /* GuideInterface.pch */,
 				231D98FF1C6A2E5B002789A2 /* UIViewExtension.swift */,
 				231D98F81C6A24E8002789A2 /* GuideInterface-Bridging-Header.h */,
 			);
@@ -281,6 +287,8 @@
 		231D98EB1C6A20E0002789A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				235C78931C6C65A5001491EF /* OrderListCell.xib */,
+				235C78951C6C65BF001491EF /* OrderListCell.swift */,
 				231D98FB1C6A2750002789A2 /* MineUserInfoView.xib */,
 				231D98FD1C6A282C002789A2 /* MineUserInfoView.swift */,
 				231D99031C6A40E5002789A2 /* MinePersonalCell.xib */,
@@ -657,6 +665,7 @@
 				239D5FC81C68C5C100A99716 /* 7.jpg in Resources */,
 				239D5F911C68C10100A99716 /* Assets.xcassets in Resources */,
 				231D99491C6A5857002789A2 /* UMSCommentDetailController.xib in Resources */,
+				235C78941C6C65A5001491EF /* OrderListCell.xib in Resources */,
 				231D99621C6A5857002789A2 /* ios-social-sdk-socialBar.html in Resources */,
 				231D99601C6A5857002789A2 /* ios-social-sdk-share-detail.html in Resources */,
 				239D5F8C1C68C10100A99716 /* Main.storyboard in Resources */,
@@ -745,6 +754,7 @@
 				231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */,
 				239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */,
 				231D99021C6A40BE002789A2 /* MinePersonalCell.swift in Sources */,
+				235C78961C6C65BF001491EF /* OrderListCell.swift in Sources */,
 				231D99001C6A2E5B002789A2 /* UIViewExtension.swift in Sources */,
 				231D98FE1C6A282C002789A2 /* MineUserInfoView.swift in Sources */,
 				231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */,

@@ -26,7 +26,6 @@ class MainTabBarController: UITabBarController {
         UINavigationBar.appearance().barStyle = UIBarStyle.Black
         UINavigationBar.appearance().barTintColor  =  UIColor(rgba: "#ffce00")
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UITabBar.appearance().backgroundColor =  UIColor(red: 40/255.0, green: 132/255.0, blue: 200/255.0, alpha: 0.3)
         
         let nav1 = UINavigationController()
         nav1.tabBarItem.title = "住店"
