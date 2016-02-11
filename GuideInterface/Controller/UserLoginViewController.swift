@@ -107,7 +107,6 @@ class UserLoginViewController: UIViewController {
     
     @IBAction func loginoutAction(sender: UIButton) {
         //用户登出
-        
         //删除当前用户信息到缓存中
         userDefaults.removeObjectForKey("username")
         userDefaults.removeObjectForKey("face")

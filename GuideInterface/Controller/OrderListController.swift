@@ -43,7 +43,7 @@ class OrderListController: BaseViewController, YSSegmentedControlDelegate ,UITab
         self.dataSource .addObject(["1"])
 
         self.orderListTableView = UITableView()
-        self.orderListTableView.frame =  CGRectMake(0, 64+44, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
+        self.orderListTableView.frame =  CGRectMake(0, 64+44, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108-46)
         self.orderListTableView.delegate = self
         self.orderListTableView.dataSource  = self
         self.orderListTableView.backgroundColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1)
@@ -63,7 +63,7 @@ class OrderListController: BaseViewController, YSSegmentedControlDelegate ,UITab
         
         let cell:OrderListCell! = self.orderListTableView.dequeueReusableCellWithIdentifier(OrderListCellIdentifier)as! OrderListCell
         cell.selectionStyle = UITableViewCellSelectionStyle.None
-        cell .loadData(self.dataSource .objectAtIndex(indexPath.section).objectAtIndex(indexPath.row) as! NSDictionary)
+        cell .loadData(["key":"name"])
         return cell
     }
     
