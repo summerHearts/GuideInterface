@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2313D6171C6CAC880065DFC9 /* AdPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D6161C6CAC880065DFC9 /* AdPageView.swift */; };
+		2313D6261C6CBD950065DFC9 /* MainHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */; };
+		2313D6271C6CBD950065DFC9 /* MainHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */; };
 		231D98E21C6A108D002789A2 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E11C6A108D002789A2 /* Define.swift */; };
 		231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E51C6A2086002789A2 /* BaseTableViewController.swift */; };
 		231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E61C6A2086002789A2 /* BaseViewController.swift */; };
@@ -104,6 +106,8 @@
 
 /* Begin PBXFileReference section */
 		2313D6161C6CAC880065DFC9 /* AdPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPageView.swift; sourceTree = "<group>"; };
+		2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHomeCell.swift; sourceTree = "<group>"; };
+		2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHomeCell.xib; sourceTree = "<group>"; };
 		231D98E11C6A108D002789A2 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Define.swift; path = ../Define.swift; sourceTree = "<group>"; };
 		231D98E51C6A2086002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		231D98E61C6A2086002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 		231D98EB1C6A20E0002789A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */,
+				2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */,
 				235C78931C6C65A5001491EF /* OrderListCell.xib */,
 				235C78951C6C65BF001491EF /* OrderListCell.swift */,
 				231D98FB1C6A2750002789A2 /* MineUserInfoView.xib */,
@@ -662,6 +668,7 @@
 				231D995E1C6A5857002789A2 /* ios-social-sdk-login-quick.html in Resources */,
 				239D5FC41C68C5C100A99716 /* 3.jpg in Resources */,
 				231D994A1C6A5857002789A2 /* UMSCommentInputController.xib in Resources */,
+				2313D6271C6CBD950065DFC9 /* MainHomeCell.xib in Resources */,
 				231D995C1C6A5857002789A2 /* ios-social-sdk-like.html in Resources */,
 				231D99551C6A5857002789A2 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				231D99511C6A5857002789A2 /* UMSocialSDKResourcesNew.bundle in Resources */,
@@ -749,6 +756,7 @@
 				231D99091C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				231D98F61C6A2109002789A2 /* OrderListController.swift in Sources */,
 				239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */,
+				2313D6261C6CBD950065DFC9 /* MainHomeCell.swift in Sources */,
 				231D98F31C6A2109002789A2 /* MainHomeController.swift in Sources */,
 				2313D6171C6CAC880065DFC9 /* AdPageView.swift in Sources */,
 				231D98F41C6A2109002789A2 /* MainTabBarController.swift in Sources */,

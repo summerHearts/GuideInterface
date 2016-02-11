@@ -12,7 +12,7 @@ class AdPageView: UIView,UIScrollViewDelegate {
     
     private let showTime:NSTimeInterval = 3;
     private var pageControl:UIPageControl = UIPageControl();
-    private var scView:UIScrollView = UIScrollView();
+    private var scrollView:UIScrollView = UIScrollView();
     private var imgPre:UIImageView = UIImageView();
     private var imgCur:UIImageView = UIImageView();
     private var imgNext:UIImageView = UIImageView();
@@ -27,30 +27,29 @@ class AdPageView: UIView,UIScrollViewDelegate {
     
     override init(frame: CGRect) {
         super.init(frame: frame);
-        self.initUIs(self);
+        self.initUI(self);
     }
     
-    private func initUIs(superView : UIView) {
-        scView = UIScrollView(frame: CGRectMake(0, 0, superView.frame.width, superView.frame.height));
-        scView.delegate = self;
-        scView.backgroundColor = UIColor.redColor();
-        scView.contentSize = CGSizeMake(superView.frame.size.width * 3, superView.frame.height);
-        scView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
-        scView.pagingEnabled = true;
-        scView.bounces = false;
-        scView.showsHorizontalScrollIndicator = false;
-        scView.showsVerticalScrollIndicator = false;
-        superView.addSubview(scView);
+    private func initUI(superView : UIView) {
+        scrollView = UIScrollView(frame: CGRectMake(0, 0, superView.frame.width, superView.frame.height));
+        scrollView.delegate = self;
+        scrollView.backgroundColor = UIColor.whiteColor();
+        scrollView.contentSize = CGSizeMake(superView.frame.size.width * 3, superView.frame.height);
+        scrollView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
+        scrollView.pagingEnabled = true;
+        scrollView.bounces = false;
+        scrollView.showsHorizontalScrollIndicator = false;
+        scrollView.showsVerticalScrollIndicator = false;
+        superView.addSubview(scrollView);
         
-        scView.addSubview(imgPre);
-        scView.addSubview(imgCur);
-        scView.addSubview(imgNext);
+        scrollView.addSubview(imgPre);
+        scrollView.addSubview(imgCur);
+        scrollView.addSubview(imgNext);
         
         imgPre.frame = CGRectMake(0, 0, superView.frame.size.width, superView.frame.size.height);
         imgCur.frame = CGRectMake(superView.frame.size.width, 0, superView.frame.size.width, superView.frame.size.height);
         imgNext.frame = CGRectMake(superView.frame.size.width * 2, 0, superView.frame.size.width, superView.frame.size.height);
-        
-        scView.scrollRectToVisible(CGRectMake(superView.frame.width, 0, superView.frame.width, superView.frame.height), animated: false);
+        scrollView.scrollRectToVisible(CGRectMake(superView.frame.width, 0, superView.frame.width, 0), animated: false);
         
         pageControl.frame = CGRectMake(0, self.frame.height - 30, self.frame.width, 20);
         pageControl.currentPageIndicatorTintColor = UIColor.redColor();
@@ -92,7 +91,7 @@ class AdPageView: UIView,UIScrollViewDelegate {
         imgCur.image = UIImage(named: nameCur as String);
         imgNext.image = UIImage(named: nameNext as String);
         
-        scView.scrollRectToVisible(CGRectMake(scView.frame.width, 0, scView.frame.width, 0), animated: false);
+        self.scrollView.scrollRectToVisible(CGRectMake(self.scrollView.frame.width, 0, self.scrollView.frame.width, 0), animated: false);
     }
     
     private func doTimer() {
@@ -125,7 +124,7 @@ class AdPageView: UIView,UIScrollViewDelegate {
     }
     
     func timerAction() {
-        scView.scrollRectToVisible(CGRectMake(scView.frame.width*2, 0, scView.frame.width,0), animated: true);
+        self.scrollView.scrollRectToVisible(CGRectMake(self.scrollView.frame.width*2, 0, self.scrollView.frame.width,0), animated: true);
         indexShow++;
         dispatch_async(dispatch_get_global_queue(0, 0), {
             NSThread.sleepForTimeInterval(0.3);
