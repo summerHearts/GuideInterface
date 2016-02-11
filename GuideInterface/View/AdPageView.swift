@@ -31,11 +31,11 @@ class AdPageView: UIView,UIScrollViewDelegate {
     }
     
     private func initUI(superView : UIView) {
-        scrollView = UIScrollView(frame: CGRectMake(0, 0, superView.frame.width, superView.frame.height));
+        scrollView = UIScrollView(frame: CGRectMake(0, 0, superView.frame.width, 120));
         scrollView.delegate = self;
         scrollView.backgroundColor = UIColor.whiteColor();
-        scrollView.contentSize = CGSizeMake(superView.frame.size.width * 3, superView.frame.height);
-        scrollView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
+        scrollView.contentSize = CGSizeMake(superView.frame.size.width * 3, 120);
+        scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         scrollView.pagingEnabled = true;
         scrollView.bounces = false;
         scrollView.showsHorizontalScrollIndicator = false;
@@ -46,9 +46,9 @@ class AdPageView: UIView,UIScrollViewDelegate {
         scrollView.addSubview(imgCur);
         scrollView.addSubview(imgNext);
         
-        imgPre.frame = CGRectMake(0, 0, superView.frame.size.width, superView.frame.size.height);
-        imgCur.frame = CGRectMake(superView.frame.size.width, 0, superView.frame.size.width, superView.frame.size.height);
-        imgNext.frame = CGRectMake(superView.frame.size.width * 2, 0, superView.frame.size.width, superView.frame.size.height);
+        imgPre.frame = CGRectMake(0, 0, superView.frame.size.width, 120);
+        imgCur.frame = CGRectMake(superView.frame.size.width, 0, superView.frame.size.width, 120);
+        imgNext.frame = CGRectMake(superView.frame.size.width * 2, 0, superView.frame.size.width, 120);
         scrollView.scrollRectToVisible(CGRectMake(superView.frame.width, 0, superView.frame.width, 0), animated: false);
         
         pageControl.frame = CGRectMake(0, self.frame.height - 30, self.frame.width, 20);

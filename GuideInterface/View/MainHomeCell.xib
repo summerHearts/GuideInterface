@@ -26,6 +26,9 @@
                 <constraint firstItem="VhD-af-5JB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ugo-PV-IP9"/>
             </constraints>
             <size key="customSize" width="301" height="79"/>
+            <connections>
+                <outlet property="mainHomeImageView" destination="VhD-af-5JB" id="Dfd-PJ-kta"/>
+            </connections>
             <point key="canvasLocation" x="297.5" y="172.5"/>
         </collectionViewCell>
     </objects>

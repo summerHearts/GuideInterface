@@ -1,5 +1,5 @@
 //
-//  MainHomeCell.swift
+//  mainHomeBannerCell.swift
 //  GuideInterface
 //
 //  Created by 佐毅 on 16/2/11.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class MainHomeCell: UICollectionViewCell {
+class mainHomeBannerCell: UICollectionViewCell {
 
-    @IBOutlet weak var mainHomeImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

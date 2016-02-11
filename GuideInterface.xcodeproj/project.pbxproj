@@ -10,6 +10,7 @@
 		2313D6171C6CAC880065DFC9 /* AdPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D6161C6CAC880065DFC9 /* AdPageView.swift */; };
 		2313D6261C6CBD950065DFC9 /* MainHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */; };
 		2313D6271C6CBD950065DFC9 /* MainHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */; };
+		2313D62C1C6CC52A0065DFC9 /* mainHomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D62A1C6CC52A0065DFC9 /* mainHomeBannerCell.swift */; };
 		231D98E21C6A108D002789A2 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E11C6A108D002789A2 /* Define.swift */; };
 		231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E51C6A2086002789A2 /* BaseTableViewController.swift */; };
 		231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E61C6A2086002789A2 /* BaseViewController.swift */; };
@@ -108,6 +109,7 @@
 		2313D6161C6CAC880065DFC9 /* AdPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPageView.swift; sourceTree = "<group>"; };
 		2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHomeCell.swift; sourceTree = "<group>"; };
 		2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHomeCell.xib; sourceTree = "<group>"; };
+		2313D62A1C6CC52A0065DFC9 /* mainHomeBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainHomeBannerCell.swift; sourceTree = "<group>"; };
 		231D98E11C6A108D002789A2 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Define.swift; path = ../Define.swift; sourceTree = "<group>"; };
 		231D98E51C6A2086002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		231D98E61C6A2086002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		231D98EB1C6A20E0002789A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2313D62A1C6CC52A0065DFC9 /* mainHomeBannerCell.swift */,
 				2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */,
 				2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */,
 				235C78931C6C65A5001491EF /* OrderListCell.xib */,
@@ -768,6 +771,7 @@
 				231D99021C6A40BE002789A2 /* MinePersonalCell.swift in Sources */,
 				235C78961C6C65BF001491EF /* OrderListCell.swift in Sources */,
 				231D99001C6A2E5B002789A2 /* UIViewExtension.swift in Sources */,
+				2313D62C1C6CC52A0065DFC9 /* mainHomeBannerCell.swift in Sources */,
 				231D98FE1C6A282C002789A2 /* MineUserInfoView.swift in Sources */,
 				231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */,
 				235C788A1C6C606A001491EF /* YSSegmentedControl.swift in Sources */,
