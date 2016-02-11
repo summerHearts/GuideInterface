@@ -15,32 +15,32 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFw-qy-KeW">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzM-pZ-hWo">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzM-pZ-hWo">
                             <rect key="frame" x="160" y="124" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" red="0.39607843139999999" green="0.1960784314" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6a-Lf-EYY">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6a-Lf-EYY">
                             <rect key="frame" x="160" y="123" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.396078431372549" green="0.19607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yc-6l-bgT">
-                            <rect key="frame" x="130" y="59" width="60" height="60"/>
+                            <rect key="frame" x="130" y="40" width="60" height="60"/>
                             <state key="normal" image="minehome_headportrait"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.82352941176470584" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="pzM-pZ-hWo" firstAttribute="top" secondItem="4Yc-6l-bgT" secondAttribute="bottom" constant="5" id="8Ed-gg-Lhy"/>
+                        <constraint firstItem="pzM-pZ-hWo" firstAttribute="top" secondItem="4Yc-6l-bgT" secondAttribute="bottom" constant="24" id="8Ed-gg-Lhy"/>
                         <constraint firstItem="pzM-pZ-hWo" firstAttribute="centerX" secondItem="qFw-qy-KeW" secondAttribute="centerX" id="FNG-Yc-5TF"/>
                         <constraint firstItem="D6a-Lf-EYY" firstAttribute="leading" secondItem="pzM-pZ-hWo" secondAttribute="leading" id="GGZ-WW-otb"/>
                         <constraint firstAttribute="bottom" secondItem="D6a-Lf-EYY" secondAttribute="bottom" constant="55" id="GaC-1x-MaE"/>
                         <constraint firstAttribute="height" constant="178" id="Ngl-Fq-jQr"/>
                         <constraint firstItem="4Yc-6l-bgT" firstAttribute="centerX" secondItem="qFw-qy-KeW" secondAttribute="centerX" id="QrP-lv-cdh"/>
-                        <constraint firstItem="4Yc-6l-bgT" firstAttribute="centerY" secondItem="qFw-qy-KeW" secondAttribute="centerY" id="ojB-AN-vb2"/>
+                        <constraint firstItem="4Yc-6l-bgT" firstAttribute="centerY" secondItem="qFw-qy-KeW" secondAttribute="centerY" constant="-19" id="ojB-AN-vb2"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iZ-ZW-hpM">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2313D6171C6CAC880065DFC9 /* AdPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D6161C6CAC880065DFC9 /* AdPageView.swift */; };
 		231D98E21C6A108D002789A2 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E11C6A108D002789A2 /* Define.swift */; };
 		231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E51C6A2086002789A2 /* BaseTableViewController.swift */; };
 		231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E61C6A2086002789A2 /* BaseViewController.swift */; };
@@ -102,6 +103,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2313D6161C6CAC880065DFC9 /* AdPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPageView.swift; sourceTree = "<group>"; };
 		231D98E11C6A108D002789A2 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Define.swift; path = ../Define.swift; sourceTree = "<group>"; };
 		231D98E51C6A2086002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		231D98E61C6A2086002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				231D98FD1C6A282C002789A2 /* MineUserInfoView.swift */,
 				231D99031C6A40E5002789A2 /* MinePersonalCell.xib */,
 				231D99011C6A40BE002789A2 /* MinePersonalCell.swift */,
+				2313D6161C6CAC880065DFC9 /* AdPageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				231D98F61C6A2109002789A2 /* OrderListController.swift in Sources */,
 				239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */,
 				231D98F31C6A2109002789A2 /* MainHomeController.swift in Sources */,
+				2313D6171C6CAC880065DFC9 /* AdPageView.swift in Sources */,
 				231D98F41C6A2109002789A2 /* MainTabBarController.swift in Sources */,
 				231D98F71C6A2109002789A2 /* ViewController.swift in Sources */,
 				231D99651C6A59DC002789A2 /* UserWeibo.swift in Sources */,
