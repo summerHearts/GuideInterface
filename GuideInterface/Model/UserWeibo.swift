@@ -10,11 +10,11 @@ import Foundation
 
 class UserWeibo: NSObject {
     
-    var user_client_id = String() //用户微博id
+    var user_client_id = String()
     
-    var face = String() //用户微博头像
+    var face = String()
     
-    var nickname = String() //用户微博昵称
+    var nickname = String()
     
-    var platform_id = Int() //平台
+    var platform_id = Int()
 }

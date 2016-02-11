@@ -63,6 +63,7 @@
 		231D99791C6A6337002789A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D99781C6A6337002789A2 /* SystemConfiguration.framework */; };
 		231D997B1C6A6344002789A2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D997A1C6A6344002789A2 /* libiconv.tbd */; };
 		231D997D1C6A634D002789A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D997C1C6A634D002789A2 /* Security.framework */; };
+		235C788A1C6C606A001491EF /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C78891C6C606A001491EF /* YSSegmentedControl.swift */; };
 		239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F861C68C10100A99716 /* AppDelegate.swift */; };
 		239D5F8C1C68C10100A99716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D5F8A1C68C10100A99716 /* Main.storyboard */; };
 		239D5F8F1C68C10100A99716 /* GuideInterface.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 239D5F8D1C68C10100A99716 /* GuideInterface.xcdatamodeld */; };
@@ -174,6 +175,7 @@
 		231D99781C6A6337002789A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		231D997A1C6A6344002789A2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		231D997C1C6A634D002789A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		235C78891C6C606A001491EF /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
 		239D5F831C68C10100A99716 /* GuideInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239D5F861C68C10100A99716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239D5F8B1C68C10100A99716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		231D99051C6A4786002789A2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				235C78891C6C606A001491EF /* YSSegmentedControl.swift */,
 				231D990E1C6A5857002789A2 /* UMSocial_Sdk_4.2.1 */,
 				231D992A1C6A5857002789A2 /* UMSocial_Sdk_Extra_Frameworks */,
 				231D99391C6A5857002789A2 /* UMSocial_Sdk_Instructions */,
@@ -745,6 +748,7 @@
 				231D99001C6A2E5B002789A2 /* UIViewExtension.swift in Sources */,
 				231D98FE1C6A282C002789A2 /* MineUserInfoView.swift in Sources */,
 				231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */,
+				235C788A1C6C606A001491EF /* YSSegmentedControl.swift in Sources */,
 				231D98E21C6A108D002789A2 /* Define.swift in Sources */,
 				231D98F51C6A2109002789A2 /* MineHomeController.swift in Sources */,
 				231D990C1C6A581D002789A2 /* UserLoginViewController.swift in Sources */,
