@@ -25,13 +25,10 @@ class MineHomeController: BaseTableViewController {
         super.viewDidLoad()
         self.dataSource = NSMutableArray()
         self.dataSource .addObject([["image":"minehome_collection","name":"我的酒店"]])
-
         self.dataSource .addObject([["image":"minehome_coupon","name":"优惠券"]])
-        
         self.dataSource .addObject([["image":"minehome_customerservice","name":"客服热线"],
             ["image":"minehome_help","name":"帮助与反馈"],
             ["image":"minehome_guanyumike","name":"关于眯客"]])
-        
         self.dataSource .addObject([["image":"minehome_setting","name":"设置"]])
         
         self.mineTableView = UITableView()
@@ -65,7 +62,6 @@ class MineHomeController: BaseTableViewController {
     
     func tappedComment(button:UIButton){
         
-       
     }
     func tappedMessage(button:UIButton){
         print(button.titleForState(.Normal))

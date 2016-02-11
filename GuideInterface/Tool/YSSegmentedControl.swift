@@ -180,7 +180,7 @@ public class YSSegmentedControl: UIView {
             font: UIFont.systemFontOfSize(15),
             selectedTextColor: UIColor.orangeColor(),
             selectedFont: UIFont.systemFontOfSize(15),
-            bottomLineColor: UIColor.orangeColor(),
+            bottomLineColor: UIColor.grayColor(),
             selectorColor: UIColor.orangeColor(),
             bottomLineHeight: 0.5,
             selectorHeight: 2,
