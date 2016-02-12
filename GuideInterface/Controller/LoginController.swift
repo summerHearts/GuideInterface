@@ -24,9 +24,8 @@ class LoginController: BaseViewController ,UITextFieldDelegate{
     
     //输入信息View
     @IBOutlet weak var inputInformationView: UIView!
+    //取消按钮
     @IBOutlet weak var closeBtn: UIButton!
-   
-    
     //输入邀请码textField
     @IBOutlet weak var inviteCodeTextField: UITextField!
     //确认验证按钮

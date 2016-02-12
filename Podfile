@@ -6,4 +6,5 @@ pod 'SDWebImage', '~>3.6'
 pod 'SCLAlertView'
 pod 'UIColor_Hex_Swift', '~> 1.8'
 pod 'MJRefresh'
+pod 'KeyboardMan', '~> 0.5.2'
 use_frameworks!

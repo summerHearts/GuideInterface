@@ -75,7 +75,6 @@ class MainTabBarController: UITabBarController {
         
         let mineHomeVC = MineHomeController()
         mineHomeVC.view.backgroundColor = UIColor.whiteColor()
-        mineHomeVC.title = "我的"
         nav3.viewControllers = [mineHomeVC]
     
         let tabs = UITabBarController()
