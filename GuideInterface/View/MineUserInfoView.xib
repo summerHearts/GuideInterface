@@ -28,19 +28,19 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yc-6l-bgT">
-                            <rect key="frame" x="130" y="40" width="60" height="60"/>
+                            <rect key="frame" x="130" y="61" width="60" height="60"/>
                             <state key="normal" image="minehome_headportrait"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.82352941176470584" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="pzM-pZ-hWo" firstAttribute="top" secondItem="4Yc-6l-bgT" secondAttribute="bottom" constant="24" id="8Ed-gg-Lhy"/>
+                        <constraint firstItem="pzM-pZ-hWo" firstAttribute="top" secondItem="4Yc-6l-bgT" secondAttribute="bottom" constant="3" id="8Ed-gg-Lhy"/>
                         <constraint firstItem="pzM-pZ-hWo" firstAttribute="centerX" secondItem="qFw-qy-KeW" secondAttribute="centerX" id="FNG-Yc-5TF"/>
                         <constraint firstItem="D6a-Lf-EYY" firstAttribute="leading" secondItem="pzM-pZ-hWo" secondAttribute="leading" id="GGZ-WW-otb"/>
                         <constraint firstAttribute="bottom" secondItem="D6a-Lf-EYY" secondAttribute="bottom" constant="55" id="GaC-1x-MaE"/>
                         <constraint firstAttribute="height" constant="178" id="Ngl-Fq-jQr"/>
                         <constraint firstItem="4Yc-6l-bgT" firstAttribute="centerX" secondItem="qFw-qy-KeW" secondAttribute="centerX" id="QrP-lv-cdh"/>
-                        <constraint firstItem="4Yc-6l-bgT" firstAttribute="centerY" secondItem="qFw-qy-KeW" secondAttribute="centerY" constant="-19" id="ojB-AN-vb2"/>
+                        <constraint firstItem="4Yc-6l-bgT" firstAttribute="centerY" secondItem="qFw-qy-KeW" secondAttribute="centerY" constant="2" id="ojB-AN-vb2"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iZ-ZW-hpM">

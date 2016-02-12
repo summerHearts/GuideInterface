@@ -16,6 +16,9 @@ class MineHomeController: BaseTableViewController {
     var mineUserInfoView:MineUserInfoView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.fd_prefersNavigationBarHidden = true
+        
         self.dataSource = NSMutableArray()
         self.dataSource .addObject([["image":"minehome_collection","name":"我的酒店"]])
         self.dataSource .addObject([["image":"minehome_coupon","name":"优惠券"]])
@@ -44,13 +47,14 @@ class MineHomeController: BaseTableViewController {
         self.mineUserInfoView.balanceBtn .addTarget(self, action:Selector("tappedBalance:"), forControlEvents: UIControlEvents.TouchUpInside)
           self.mineUserInfoView.commentBtn .addTarget(self, action:Selector("tappedComment:"), forControlEvents: UIControlEvents.TouchUpInside)
         self.mineUserInfoView.messageBtn .addTarget(self, action:Selector("tappedMessage:"), forControlEvents: UIControlEvents.TouchUpInside)
+        self.mineUserInfoView.loginBtn .addTarget(self, action: Selector("tappedLogin:"), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func tappedBalance(button:UIButton){
         
-        let detailCtrl = UserLoginViewController(nibName: "UserLoginViewController", bundle: nil);
-        detailCtrl.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(detailCtrl, animated: true)
+        let loginController =  LoginController()
+        let nagvationController=UINavigationController(rootViewController:loginController)
+        self.navigationController!.presentViewController(nagvationController, animated: true, completion: nil)
     }
     
     func tappedComment(button:UIButton){
@@ -58,6 +62,14 @@ class MineHomeController: BaseTableViewController {
     }
     func tappedMessage(button:UIButton){
         print(button.titleForState(.Normal))
+    }
+    
+    
+    func tappedLogin(button:UIButton){
+        
+        let loginController =  LoginController()
+         let nagvationController=UINavigationController(rootViewController:loginController)
+        self.navigationController!.presentViewController(nagvationController, animated: true, completion: nil)
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.dataSource.count

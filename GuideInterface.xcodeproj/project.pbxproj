@@ -26,8 +26,6 @@
 		231D99021C6A40BE002789A2 /* MinePersonalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D99011C6A40BE002789A2 /* MinePersonalCell.swift */; };
 		231D99041C6A40E5002789A2 /* MinePersonalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231D99031C6A40E5002789A2 /* MinePersonalCell.xib */; };
 		231D99091C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 231D99081C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		231D990C1C6A581D002789A2 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D990A1C6A581D002789A2 /* UserLoginViewController.swift */; };
-		231D990D1C6A581D002789A2 /* UserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231D990B1C6A581D002789A2 /* UserLoginViewController.xib */; };
 		231D99461C6A5857002789A2 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 231D990F1C6A5857002789A2 /* UMSocialLocalizable.strings */; };
 		231D99471C6A5857002789A2 /* libUMSocial_Sdk_4.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D991D1C6A5857002789A2 /* libUMSocial_Sdk_4.2.1.a */; };
 		231D99481C6A5857002789A2 /* libUMSocial_Sdk_Comment_4.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D991E1C6A5857002789A2 /* libUMSocial_Sdk_Comment_4.2.1.a */; };
@@ -85,6 +83,8 @@
 		239D5FC71C68C5C100A99716 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239D5FBF1C68C5C100A99716 /* 6.jpg */; };
 		239D5FC81C68C5C100A99716 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239D5FC01C68C5C100A99716 /* 7.jpg */; };
 		239D5FC91C68C5C100A99716 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 239D5FC11C68C5C100A99716 /* 8.jpg */; };
+		23C694CC1C6DF68D00F14368 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C694CB1C6DF68D00F14368 /* LoginController.xib */; };
+		23C694CE1C6DF6CD00F14368 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C694CD1C6DF6CD00F14368 /* LoginController.swift */; };
 		B03FD14A32F41F7FE7EB05A9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FDC6325164AFB9EC2DF4E9 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -127,8 +127,6 @@
 		231D99031C6A40E5002789A2 /* MinePersonalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinePersonalCell.xib; sourceTree = "<group>"; };
 		231D99071C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		231D99081C6A478F002789A2 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		231D990A1C6A581D002789A2 /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
-		231D990B1C6A581D002789A2 /* UserLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLoginViewController.xib; sourceTree = "<group>"; };
 		231D99101C6A5857002789A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		231D99121C6A5857002789A2 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		231D99131C6A5857002789A2 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -210,6 +208,8 @@
 		239D5FBF1C68C5C100A99716 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		239D5FC01C68C5C100A99716 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		239D5FC11C68C5C100A99716 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		23C694CB1C6DF68D00F14368 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		23C694CD1C6DF6CD00F14368 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		621F40C9964C74294AC3474D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		63FDC6325164AFB9EC2DF4E9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD05E4D7961E510049C74E19 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -278,8 +278,8 @@
 				231D98EF1C6A2109002789A2 /* MineHomeController.swift */,
 				231D98F01C6A2109002789A2 /* OrderListController.swift */,
 				231D98F11C6A2109002789A2 /* ViewController.swift */,
-				231D990A1C6A581D002789A2 /* UserLoginViewController.swift */,
-				231D990B1C6A581D002789A2 /* UserLoginViewController.xib */,
+				23C694CB1C6DF68D00F14368 /* LoginController.xib */,
+				23C694CD1C6DF6CD00F14368 /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -665,7 +665,6 @@
 				239D5FC21C68C5C100A99716 /* 1.jpg in Resources */,
 				239D5FC31C68C5C100A99716 /* 2.jpg in Resources */,
 				231D995F1C6A5857002789A2 /* ios-social-sdk-shake.html in Resources */,
-				231D990D1C6A581D002789A2 /* UserLoginViewController.xib in Resources */,
 				231D99611C6A5857002789A2 /* ios-social-sdk-share-quick.html in Resources */,
 				231D995B1C6A5857002789A2 /* ios-social-sdk-comment-quick.html in Resources */,
 				231D995E1C6A5857002789A2 /* ios-social-sdk-login-quick.html in Resources */,
@@ -678,6 +677,7 @@
 				239D5FC81C68C5C100A99716 /* 7.jpg in Resources */,
 				239D5F911C68C10100A99716 /* Assets.xcassets in Resources */,
 				231D99491C6A5857002789A2 /* UMSCommentDetailController.xib in Resources */,
+				23C694CC1C6DF68D00F14368 /* LoginController.xib in Resources */,
 				235C78941C6C65A5001491EF /* OrderListCell.xib in Resources */,
 				231D99621C6A5857002789A2 /* ios-social-sdk-socialBar.html in Resources */,
 				231D99601C6A5857002789A2 /* ios-social-sdk-share-detail.html in Resources */,
@@ -765,6 +765,7 @@
 				231D98F41C6A2109002789A2 /* MainTabBarController.swift in Sources */,
 				231D98F71C6A2109002789A2 /* ViewController.swift in Sources */,
 				231D99651C6A59DC002789A2 /* UserWeibo.swift in Sources */,
+				23C694CE1C6DF6CD00F14368 /* LoginController.swift in Sources */,
 				231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */,
 				231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */,
 				239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */,
@@ -777,7 +778,6 @@
 				235C788A1C6C606A001491EF /* YSSegmentedControl.swift in Sources */,
 				231D98E21C6A108D002789A2 /* Define.swift in Sources */,
 				231D98F51C6A2109002789A2 /* MineHomeController.swift in Sources */,
-				231D990C1C6A581D002789A2 /* UserLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,14 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UMSocialQQHandler.setQQWithAppId("1103695854", appKey: "Qx34CKDOmDxksgT9", url: "http://www.umeng.com/social")
         
-        //检测用户是否登录
-        if userDefaults.stringForKey("user_client_id") != nil{
-            loginState = true
-            userWeibo.platform_id = 1
-            userWeibo.face = userDefaults.stringForKey("face")!
-            userWeibo.nickname = userDefaults.stringForKey("username")!
-            userWeibo.user_client_id = userDefaults.stringForKey("user_client_id")!
-        }
         self.window?.makeKeyAndVisible()
         return true
     }

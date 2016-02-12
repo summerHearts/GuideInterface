@@ -21,7 +21,7 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
   
         let flowLayout = UICollectionViewFlowLayout()
 
-        self.collectionView = UICollectionView(frame:CGRectMake(0,0,UIScreen.mainScreen().bounds.size.width,UIScreen.mainScreen().bounds.size.height-46), collectionViewLayout: flowLayout)
+        self.collectionView = UICollectionView(frame:CGRectMake(0,0,UIScreen.mainScreen().bounds.size.width,UIScreen.mainScreen().bounds.size.height), collectionViewLayout: flowLayout)
         self.collectionView!.delegate = self
         self.collectionView!.dataSource = self
         self.collectionView.backgroundColor = UIColor.whiteColor()
@@ -32,7 +32,7 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
 
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 10
+        return 12
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
@@ -43,8 +43,8 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
         if indexPath.section == 0{
             let cell : mainHomeBannerCell = collectionView.dequeueReusableCellWithReuseIdentifier(mainHomeBannerCellIdentifier, forIndexPath: indexPath)  as! mainHomeBannerCell
             self.adPageView = AdPageView(frame: CGRectMake(0,0, UIScreen.mainScreen().bounds.size.width, 120));
-            self.imageDataList = NSArray().arrayByAddingObjectsFromArray(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","4.jpg","1.jpg"])
-            self.adPageView.setImageList(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","4.jpg","1.jpg"]);
+            self.imageDataList = NSArray().arrayByAddingObjectsFromArray(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","2.jpg","3.jpg","4.jpg","1.jpg"])
+            self.adPageView.setImageList(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","2.jpg","3.jpg","4.jpg","1.jpg"]);
             cell .addSubview(self.adPageView)
             return cell
         }else{
