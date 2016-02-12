@@ -80,7 +80,6 @@ class MainTabBarController: UITabBarController {
         let tabs = UITabBarController()
         tabs.viewControllers = [nav1,nav2,nav3]
         self.tabBarControllers = tabs
-
     }
 
     override func didReceiveMemoryWarning() {

@@ -45,12 +45,19 @@ class LoginController: BaseViewController ,UITextFieldDelegate{
         self.fd_prefersNavigationBarHidden = true;
         self.fd_interactivePopMaxAllowedInitialDistanceToLeftEdge=200;
         
+        //
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "tapClick:"))
+
         //键盘返回类型
         self.phoneTextField.delegate = self;
         self.verificationCodeTextField.delegate = self;
         self.phoneTextField.clearButtonMode = UITextFieldViewMode.Always
-        self.phoneTextField.keyboardType = UIKeyboardType.NumberPad;
-        self.verificationCodeTextField.keyboardType = UIKeyboardType.NumberPad;
+        //数字键盘收起问题
+//        self.phoneTextField.keyboardType = UIKeyboardType.NumberPad;
+//        self.verificationCodeTextField.keyboardType = UIKeyboardType.NumberPad;
+        
+        self.phoneTextField.returnKeyType = UIReturnKeyType.Done
+        self.verificationCodeTextField.returnKeyType = UIReturnKeyType.Done
         //获取验证码
         self.getVerificationCodeBtn.layer.cornerRadius = 4.0
         self.getVerificationCodeBtn.layer.masksToBounds = true
@@ -64,7 +71,17 @@ class LoginController: BaseViewController ,UITextFieldDelegate{
         self.sureCheckBtn .addTarget(self, action:Selector("sureCheckAction:"), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
     
+    func tapClick(tap:UITapGestureRecognizer){
+        self.phoneTextField.resignFirstResponder()
+        self.verificationCodeTextField.resignFirstResponder()
+
+    }
     func sureCheckAction(button:UIButton){
        self.dismissViewControllerAnimated(true, completion: {})
     }
