@@ -58,9 +58,12 @@ class MineHomeController: BaseTableViewController {
     }
     
     func tappedComment(button:UIButton){
-        
+        var imagesArray = Array<UIImage>()
+            imagesArray.append(UIImage(named: "loading")!)
+        self.pleaseWaitWithImages(imagesArray, timeInterval: 2)
     }
     func tappedMessage(button:UIButton){
+        self.clearAllNotice()
         print(button.titleForState(.Normal))
     }
     
