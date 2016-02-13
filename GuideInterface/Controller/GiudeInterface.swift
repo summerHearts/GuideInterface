@@ -30,6 +30,7 @@ class GiudeInterface: BaseViewController,UIScrollViewDelegate {
     }
     
     
+    
     func initScrollView(){
         let arr = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"]
         if self.scrollView == nil {

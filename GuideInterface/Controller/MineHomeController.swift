@@ -8,7 +8,10 @@
 
 
 private let mineHomeCellIdentifier = "mineUserInfoCellIdentifier"
+
 import UIKit
+
+import Alamofire
 
 class MineHomeController: BaseTableViewController {
     var mineTableView: UITableView!
@@ -40,9 +43,14 @@ class MineHomeController: BaseTableViewController {
         self.mineTableView.tableHeaderView = self.mineUserInfoView
         self.mineUserInfoView.userNameLabel.text = "13651981343"
         self.mineUserInfoView.userStatusLabel.text = "已登录"
-        self .addTagAction();
+        self .addTagAction()
+        
+        let manager = HTTPRequestManager()
+        manager.dataRequest(method: HTTPRequestManager.Method.GET, urlString: "http://httpbin.org/get", parameter: ["foo": "bar"]){
+            (responseObject, error) -> Void in
+            print(responseObject)
+        }
     }
-    
     func addTagAction(){
         self.mineUserInfoView.balanceBtn .addTarget(self, action:Selector("tappedBalance:"), forControlEvents: UIControlEvents.TouchUpInside)
           self.mineUserInfoView.commentBtn .addTarget(self, action:Selector("tappedComment:"), forControlEvents: UIControlEvents.TouchUpInside)
