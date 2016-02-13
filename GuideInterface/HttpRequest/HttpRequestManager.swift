@@ -23,7 +23,7 @@ public typealias HTTPRequestJSONHandler = (responseObject: JSON?, error: HTTPReq
 
 public class HTTPRequestManager {
     public enum Method : String {
-        case OPTIONS, GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, CONNECT
+        case GET, POST
         var alamofireMethod: Alamofire.Method {
             var results = Alamofire.Method.GET
             switch self {
@@ -31,20 +31,6 @@ public class HTTPRequestManager {
                 results = Alamofire.Method.GET
             case .POST:
                 results = Alamofire.Method.POST
-            case .HEAD:
-                results = Alamofire.Method.HEAD
-            case .OPTIONS:
-                results = Alamofire.Method.OPTIONS
-            case .PUT:
-                results = Alamofire.Method.PUT
-            case .PATCH:
-                results = Alamofire.Method.POST
-            case .DELETE:
-                results = Alamofire.Method.DELETE
-            case .TRACE:
-                results = Alamofire.Method.TRACE
-            case .CONNECT:
-                results = Alamofire.Method.CONNECT
             }
             return results
         }

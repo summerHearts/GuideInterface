@@ -1,5 +1,5 @@
 //
-//  HttpPNetworkReachability.swift
+//  HttpNetworkReachability.swift
 //  GuideInterface
 //
 //  Created by 佐毅 on 16/2/13.

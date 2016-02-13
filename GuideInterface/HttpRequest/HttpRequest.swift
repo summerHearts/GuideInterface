@@ -14,7 +14,6 @@ let  TestHttpBaseURL = "http://asfjlkjasfka/"
 let SimulationHttpBaseURL = "http://ssakljfjashf/"
 //正式
 let FormalHttpBaseURL  = "http://ssakljfjashf/"
-
 //Mock
 let MockHttpBaseURL = "http://ssakljfjashf/"
 
@@ -74,13 +73,13 @@ extension HttpRequest {
     var URLString: String {
         switch requestParams.requestEnvironmentType {
         case .HttpFormal:
-            return TestHttpBaseURL
+            return FormalHttpBaseURL
         case .HttpSimulation:
             return SimulationHttpBaseURL
         case .HttpTest:
-            return SimulationHttpBaseURL
+            return TestHttpBaseURL
         case .HttpMock:
-            return SimulationHttpBaseURL
+            return MockHttpBaseURL
         }
     }
         
