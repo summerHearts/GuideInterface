@@ -10,11 +10,11 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-
 public enum HTTPRequestError: ErrorType {
-    case None
-    case SystemError(error: NSError?)
+   
+    //网络错误（当前网络不可用）
     case NetworkError
+    //业务逻辑返回错误 (token过期，未填写订单)
     case BusinessError(description: String)
 }
 
@@ -25,7 +25,7 @@ public class HTTPRequestManager {
     public enum Method : String {
         case GET, POST
         var alamofireMethod: Alamofire.Method {
-            var results = Alamofire.Method.GET
+            var results = Alamofire.Method.POST
             switch self {
             case .GET:
                 results = Alamofire.Method.GET
@@ -48,7 +48,7 @@ public class HTTPRequestManager {
                 }
             } else {
                 if let handler = complectionHandler {
-                    handler(responseObject: nil, error: HTTPRequestError.SystemError(error: resp.result.error))
+                    handler(responseObject: nil, error: HTTPRequestError.BusinessError(description:(resp.result.error?.description)!))
                 }
             }
         }
