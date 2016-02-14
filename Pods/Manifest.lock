@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (3.2.0)
   - KeyboardMan (0.5.2)
+  - Locksmith (2.0.7)
   - MJRefresh (3.1.0)
   - SCLAlertView (0.5)
   - SDWebImage (3.7.5):
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 3.2.0)
   - KeyboardMan (~> 0.5.2)
+  - Locksmith
   - MJRefresh
   - SCLAlertView
   - SDWebImage (~> 3.6)
@@ -21,6 +23,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   KeyboardMan: b081c254c5c0adc794a49b4e97a86cb4ac917a66
+  Locksmith: 46384a1c603836aa47a66020e289c157409c7541
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SCLAlertView: 51a328f3985e13e6bfe8dc77123543480fa615f9
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461

@@ -7,21 +7,24 @@
 //
 
 import UIKit
+let APP_WIDTH       = UIScreen.mainScreen().bounds.size.width
 
-let mainHomeCellIdentifier = "mainHomeCellIdentifier"
+let mainHomeCellIdentifier       = "mainHomeCellIdentifier"
 let mainHomeBannerCellIdentifier = "mainHomeBannerCellIdentifier"
+
 class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UICollectionViewDelegate{
 
     var collectionView: UICollectionView!
     var adPageView:AdPageView!
     var imageDataList: NSArray!
-    
+    var searchView : UIView!
+    var searchButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
   
+ 
         let flowLayout = UICollectionViewFlowLayout()
-
-        self.collectionView = UICollectionView(frame:CGRectMake(0,0,UIScreen.mainScreen().bounds.size.width,UIScreen.mainScreen().bounds.size.height), collectionViewLayout: flowLayout)
+        self.collectionView = UICollectionView(frame:CGRectMake(0,64,UIScreen.mainScreen().bounds.size.width,UIScreen.mainScreen().bounds.size.height-64-44), collectionViewLayout: flowLayout)
         self.collectionView!.delegate = self
         self.collectionView!.dataSource = self
         self.collectionView.backgroundColor = UIColor.whiteColor()
@@ -30,6 +33,26 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
         self.view .addSubview(self.collectionView)
     }
 
+    func initSearchView(){
+        self.searchView = UIView(frame: CGRectMake(0, 0, APP_WIDTH, 44))
+        self.searchView.backgroundColor = UIColor(rgba: "#FFAE00")
+        let backgroundImageView = UIImageView(frame: CGRectMake(6, 6, APP_WIDTH-12, 44-12))
+        backgroundImageView.image = UIImage(named: "searchbar_bg")?.resizableImageWithCapInsets(UIEdgeInsetsMake(5, 20, 5, 20), resizingMode: UIImageResizingMode.Stretch)
+        self.searchView .addSubview(backgroundImageView)
+        
+        self.searchButton = UIButton(frame: CGRectMake(0, 0, APP_WIDTH, 44))
+        self.searchButton.setTitle("查找附近3km酒店", forState:UIControlState.Normal) //普通状态下的文字
+        self.searchButton .addTarget(self, action:Selector("searchTapAction:"), forControlEvents: UIControlEvents.TouchUpInside)
+        self.searchButton.setImage(UIImage(named:"hotelsearchicon"),forState:.Normal)
+        self.searchButton.setTitleColor(UIColor(rgba: "#9E9E9E"),forState: .Normal) //普通状态下文字的颜色
+        self.searchButton.titleLabel?.font = UIFont.systemFontOfSize(12)
+        self.searchButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10)
+        self.searchView.addSubview(self.searchButton)
+    }
+    
+    func searchTapAction(button:UIButton){
+        print("搜索文字为")
+    }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 12
@@ -46,6 +69,8 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
             self.imageDataList = NSArray().arrayByAddingObjectsFromArray(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","2.jpg","3.jpg","4.jpg","1.jpg"])
             self.adPageView.setImageList(["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","2.jpg","3.jpg","4.jpg","1.jpg"]);
             cell .addSubview(self.adPageView)
+            self.initSearchView()
+            cell.addSubview(self.searchView)
             return cell
         }else{
             let cell : MainHomeCell = collectionView.dequeueReusableCellWithReuseIdentifier(mainHomeCellIdentifier, forIndexPath: indexPath)  as! MainHomeCell
@@ -66,6 +91,18 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
     {
         return 0.0;
     }
+    
+    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if (targetContentOffset.memory.y < 44){
+            
+            if (targetContentOffset.memory.y>44/3*2) {
+                scrollView.setContentOffset( CGPointMake(scrollView.contentOffset.x , 44 ), animated: true )
+            }else{
+                scrollView.setContentOffset( CGPointMake(scrollView.contentOffset.x , 0), animated: true )
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

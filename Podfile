@@ -7,4 +7,5 @@ pod 'SCLAlertView'
 pod 'UIColor_Hex_Swift', '~> 1.8'
 pod 'MJRefresh'
 pod 'KeyboardMan', '~> 0.5.2'
+pod 'Locksmith'
 use_frameworks!

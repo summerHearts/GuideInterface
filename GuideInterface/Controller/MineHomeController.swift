@@ -45,6 +45,7 @@ class MineHomeController: BaseTableViewController {
         self.mineUserInfoView.userStatusLabel.text = "已登录"
         self .addTagAction()
         
+        //添加网络请求
         let manager = HTTPRequestManager()
         manager.dataRequest(method: HTTPRequestManager.Method.GET, urlString: "http://httpbin.org/get", parameter: ["foo": "bar"]){
             (responseObject, error) -> Void in
@@ -82,6 +83,7 @@ class MineHomeController: BaseTableViewController {
          let nagvationController=UINavigationController(rootViewController:loginController)
         self.navigationController!.presentViewController(nagvationController, animated: true, completion: nil)
     }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.dataSource.count
     }

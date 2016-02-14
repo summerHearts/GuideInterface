@@ -11,6 +11,7 @@
 		2313D6261C6CBD950065DFC9 /* MainHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */; };
 		2313D6271C6CBD950065DFC9 /* MainHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */; };
 		2313D62C1C6CC52A0065DFC9 /* mainHomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2313D62A1C6CC52A0065DFC9 /* mainHomeBannerCell.swift */; };
+		23156F531C70B5300013A59F /* MessageCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23156F521C70B52F0013A59F /* MessageCenter.swift */; };
 		231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E51C6A2086002789A2 /* BaseTableViewController.swift */; };
 		231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98E61C6A2086002789A2 /* BaseViewController.swift */; };
 		231D98F21C6A2109002789A2 /* GiudeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D98EC1C6A2109002789A2 /* GiudeInterface.swift */; };
@@ -55,7 +56,6 @@
 		231D99611C6A5857002789A2 /* ios-social-sdk-share-quick.html in Resources */ = {isa = PBXBuildFile; fileRef = 231D99431C6A5857002789A2 /* ios-social-sdk-share-quick.html */; };
 		231D99621C6A5857002789A2 /* ios-social-sdk-socialBar.html in Resources */ = {isa = PBXBuildFile; fileRef = 231D99441C6A5857002789A2 /* ios-social-sdk-socialBar.html */; };
 		231D99631C6A5857002789A2 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 231D99451C6A5857002789A2 /* markdown.css */; };
-		231D99651C6A59DC002789A2 /* UserWeibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D99641C6A59DC002789A2 /* UserWeibo.swift */; };
 		231D996F1C6A62EF002789A2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D996E1C6A62EF002789A2 /* libz.tbd */; };
 		231D99711C6A62FE002789A2 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D99701C6A62FE002789A2 /* libstdc++.tbd */; };
 		231D99731C6A6312002789A2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D99721C6A6312002789A2 /* CoreTelephony.framework */; };
@@ -114,6 +114,7 @@
 		2313D6241C6CBD950065DFC9 /* MainHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHomeCell.swift; sourceTree = "<group>"; };
 		2313D6251C6CBD950065DFC9 /* MainHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHomeCell.xib; sourceTree = "<group>"; };
 		2313D62A1C6CC52A0065DFC9 /* mainHomeBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainHomeBannerCell.swift; sourceTree = "<group>"; };
+		23156F521C70B52F0013A59F /* MessageCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCenter.swift; sourceTree = "<group>"; };
 		231D98E51C6A2086002789A2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		231D98E61C6A2086002789A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		231D98EC1C6A2109002789A2 /* GiudeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiudeInterface.swift; sourceTree = "<group>"; };
@@ -177,7 +178,6 @@
 		231D99431C6A5857002789A2 /* ios-social-sdk-share-quick.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-share-quick.html"; sourceTree = "<group>"; };
 		231D99441C6A5857002789A2 /* ios-social-sdk-socialBar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-socialBar.html"; sourceTree = "<group>"; };
 		231D99451C6A5857002789A2 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
-		231D99641C6A59DC002789A2 /* UserWeibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWeibo.swift; sourceTree = "<group>"; };
 		231D996E1C6A62EF002789A2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		231D99701C6A62FE002789A2 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		231D99721C6A6312002789A2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -264,6 +264,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23156F511C70B5220013A59F /* MessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				23156F521C70B52F0013A59F /* MessageCenter.swift */,
+			);
+			path = MessageCenter;
+			sourceTree = "<group>";
+		};
 		231D98E01C6A107F002789A2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,18 +293,10 @@
 				231D98EF1C6A2109002789A2 /* MineHomeController.swift */,
 				231D98F01C6A2109002789A2 /* OrderListController.swift */,
 				231D98F11C6A2109002789A2 /* ViewController.swift */,
-				23C694CB1C6DF68D00F14368 /* LoginController.xib */,
 				23C694CD1C6DF6CD00F14368 /* LoginController.swift */,
+				23C694CB1C6DF68D00F14368 /* LoginController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		231D98EA1C6A20E0002789A2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				231D99641C6A59DC002789A2 /* UserWeibo.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		231D98EB1C6A20E0002789A2 /* View */ = {
@@ -471,10 +471,10 @@
 		239D5F851C68C10100A99716 /* GuideInterface */ = {
 			isa = PBXGroup;
 			children = (
+				23156F511C70B5220013A59F /* MessageCenter */,
 				23DD85E01C6F52E70040C046 /* HttpRequest */,
 				231D99051C6A4786002789A2 /* Tool */,
 				231D98E91C6A20E0002789A2 /* Controller */,
-				231D98EA1C6A20E0002789A2 /* Model */,
 				231D98EB1C6A20E0002789A2 /* View */,
 				231D98E01C6A107F002789A2 /* Base */,
 				239D5FB91C68C5AE00A99716 /* Image */,
@@ -788,11 +788,11 @@
 				231D98F41C6A2109002789A2 /* MainTabBarController.swift in Sources */,
 				23C694D11C6E27B400F14368 /* SwiftNotice.swift in Sources */,
 				231D98F71C6A2109002789A2 /* ViewController.swift in Sources */,
-				231D99651C6A59DC002789A2 /* UserWeibo.swift in Sources */,
 				23C694CE1C6DF6CD00F14368 /* LoginController.swift in Sources */,
 				231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */,
 				231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */,
 				239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */,
+				23156F531C70B5300013A59F /* MessageCenter.swift in Sources */,
 				231D99021C6A40BE002789A2 /* MinePersonalCell.swift in Sources */,
 				23DD85E21C6F53090040C046 /* Reachability.swift in Sources */,
 				235C78961C6C65BF001491EF /* OrderListCell.swift in Sources */,
@@ -954,7 +954,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 891809836@qq.com (232ZSFU24A)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -982,7 +982,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 891809836@qq.com (232ZSFU24A)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
