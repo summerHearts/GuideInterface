@@ -33,7 +33,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWS-Ty-YbT">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_headportrait" translatesAutoresizingMaskIntoConstraints="NO" id="inv-c8-jbc">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_headportrait" translatesAutoresizingMaskIntoConstraints="NO" id="inv-c8-jbc">
                                     <rect key="frame" x="119" y="100" width="81" height="119"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-9N-yN5">

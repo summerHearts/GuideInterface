@@ -44,7 +44,10 @@ public class HTTPRequestManager {
         req.responseJSON { (resp) -> Void in
             if resp.result.isSuccess {
                 if let handler = complectionHandler {
+               
+              
                     handler(responseObject: resp.result.value, error: nil)
+                   
                 }
             } else {
                 if let handler = complectionHandler {
@@ -65,7 +68,7 @@ extension HTTPRequestManager {
         
         dataRequest(method: req.method, urlString: req.URLString, parameter: req.parameters) { (responseObject, error) -> Void in
             if error == nil {
-               
+                
             }else {
                 
                 if let handler = completionHandler {

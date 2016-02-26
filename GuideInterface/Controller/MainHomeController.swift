@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import MJRefresh
+import MJExtension
+import SwiftyJSON
+
 let APP_WIDTH       = UIScreen.mainScreen().bounds.size.width
 
 let mainHomeCellIdentifier       = "mainHomeCellIdentifier"
@@ -21,7 +25,6 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
     var searchButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-  
  
         let flowLayout = UICollectionViewFlowLayout()
         self.collectionView = UICollectionView(frame:CGRectMake(0,64,UIScreen.mainScreen().bounds.size.width,UIScreen.mainScreen().bounds.size.height-64-44), collectionViewLayout: flowLayout)
@@ -31,6 +34,36 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
          self.collectionView .registerNib(UINib(nibName: "MainHomeCell", bundle: nil), forCellWithReuseIdentifier: mainHomeCellIdentifier)
         self.collectionView.registerClass(mainHomeBannerCell.classForCoder(), forCellWithReuseIdentifier: mainHomeBannerCellIdentifier)
         self.view .addSubview(self.collectionView)
+        //MJ进行下拉刷新
+        self.collectionView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")
+        //MJ上拉加载
+        self.collectionView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: "upRefresh")
+    }
+    
+    //下拉刷新
+    func downRefresh(){
+        let manager = HTTPRequestManager()
+        manager.dataRequest(method: HTTPRequestManager.Method.POST, urlString: "XXXXX", parameter: ["hotelid": "450300000069"]){
+            (responseObject, error) -> Void in
+            if  (responseObject != nil) {
+                let json = JSON(responseObject!)
+                
+                print("JSON: \(json)")
+            }
+           
+            
+            self.collectionView.mj_header.endRefreshing()
+        }
+    }
+    
+    //上拉刷新
+    func upRefresh(){
+        let manager = HTTPRequestManager()
+        manager.dataRequest(method: HTTPRequestManager.Method.POST, urlString: "XXXXXXXXX", parameter: ["foo": "bar"]){
+            (responseObject, error) -> Void in
+            print(responseObject)
+            self.collectionView.mj_header.endRefreshing()
+        }
     }
 
     func initSearchView(){

@@ -85,21 +85,33 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/IQKeyboardManager.framework"
   install_framework "Pods/KeyboardMan.framework"
   install_framework "Pods/Locksmith.framework"
+  install_framework "Pods/MBProgressHUD.framework"
+  install_framework "Pods/MJExtension.framework"
   install_framework "Pods/MJRefresh.framework"
   install_framework "Pods/SCLAlertView.framework"
   install_framework "Pods/SDWebImage.framework"
+  install_framework "Pods/SVProgressHUD.framework"
+  install_framework "Pods/SnapKit.framework"
   install_framework "Pods/SwiftyJSON.framework"
   install_framework "Pods/UIColor_Hex_Swift.framework"
+  install_framework "Pods/UITableView_FDTemplateLayoutCell.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/IQKeyboardManager.framework"
   install_framework "Pods/KeyboardMan.framework"
   install_framework "Pods/Locksmith.framework"
+  install_framework "Pods/MBProgressHUD.framework"
+  install_framework "Pods/MJExtension.framework"
   install_framework "Pods/MJRefresh.framework"
   install_framework "Pods/SCLAlertView.framework"
   install_framework "Pods/SDWebImage.framework"
+  install_framework "Pods/SVProgressHUD.framework"
+  install_framework "Pods/SnapKit.framework"
   install_framework "Pods/SwiftyJSON.framework"
   install_framework "Pods/UIColor_Hex_Swift.framework"
+  install_framework "Pods/UITableView_FDTemplateLayoutCell.framework"
 fi

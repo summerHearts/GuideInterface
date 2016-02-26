@@ -64,6 +64,7 @@
 		231D99791C6A6337002789A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D99781C6A6337002789A2 /* SystemConfiguration.framework */; };
 		231D997B1C6A6344002789A2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D997A1C6A6344002789A2 /* libiconv.tbd */; };
 		231D997D1C6A634D002789A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D997C1C6A634D002789A2 /* Security.framework */; };
+		234516E01C7F1AD700F8023F /* HttpTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234516DF1C7F1AD700F8023F /* HttpTestModel.swift */; };
 		235C788A1C6C606A001491EF /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C78891C6C606A001491EF /* YSSegmentedControl.swift */; };
 		235C78941C6C65A5001491EF /* OrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235C78931C6C65A5001491EF /* OrderListCell.xib */; };
 		235C78961C6C65BF001491EF /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C78951C6C65BF001491EF /* OrderListCell.swift */; };
@@ -186,6 +187,7 @@
 		231D99781C6A6337002789A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		231D997A1C6A6344002789A2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		231D997C1C6A634D002789A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		234516DF1C7F1AD700F8023F /* HttpTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTestModel.swift; sourceTree = "<group>"; };
 		235C78891C6C606A001491EF /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
 		235C78931C6C65A5001491EF /* OrderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderListCell.xib; sourceTree = "<group>"; };
 		235C78951C6C65BF001491EF /* OrderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
@@ -446,6 +448,14 @@
 			path = UMSocial_Sdk_Instructions;
 			sourceTree = "<group>";
 		};
+		234516DE1C7F1AB700F8023F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				234516DF1C7F1AD700F8023F /* HttpTestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		239D5F7A1C68C10100A99716 = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +481,7 @@
 		239D5F851C68C10100A99716 /* GuideInterface */ = {
 			isa = PBXGroup;
 			children = (
+				234516DE1C7F1AB700F8023F /* Model */,
 				23156F511C70B5220013A59F /* MessageCenter */,
 				23DD85E01C6F52E70040C046 /* HttpRequest */,
 				231D99051C6A4786002789A2 /* Tool */,
@@ -789,6 +800,7 @@
 				23C694D11C6E27B400F14368 /* SwiftNotice.swift in Sources */,
 				231D98F71C6A2109002789A2 /* ViewController.swift in Sources */,
 				23C694CE1C6DF6CD00F14368 /* LoginController.swift in Sources */,
+				234516E01C7F1AD700F8023F /* HttpTestModel.swift in Sources */,
 				231D98E81C6A2086002789A2 /* BaseViewController.swift in Sources */,
 				231D98E71C6A2086002789A2 /* BaseTableViewController.swift in Sources */,
 				239D5F871C68C10100A99716 /* AppDelegate.swift in Sources */,

@@ -45,12 +45,7 @@ class MineHomeController: BaseTableViewController {
         self.mineUserInfoView.userStatusLabel.text = "已登录"
         self .addTagAction()
         
-        //添加网络请求
-        let manager = HTTPRequestManager()
-        manager.dataRequest(method: HTTPRequestManager.Method.GET, urlString: "http://httpbin.org/get", parameter: ["foo": "bar"]){
-            (responseObject, error) -> Void in
-            print(responseObject)
-        }
+      
     }
     func addTagAction(){
         self.mineUserInfoView.balanceBtn .addTarget(self, action:Selector("tappedBalance:"), forControlEvents: UIControlEvents.TouchUpInside)
