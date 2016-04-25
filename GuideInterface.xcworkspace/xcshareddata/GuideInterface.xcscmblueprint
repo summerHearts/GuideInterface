@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "893D3875294CC3DEE988E5BE4E7A10255C85C5B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2B63CCF71525A271478FBA0FCECF929E60AF80A6" : 0,
+    "893D3875294CC3DEE988E5BE4E7A10255C85C5B1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B1E0099B-5C17-4525-B9B9-319AC5E39C07",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2B63CCF71525A271478FBA0FCECF929E60AF80A6" : "",
+    "893D3875294CC3DEE988E5BE4E7A10255C85C5B1" : "GuideInterface\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GuideInterface",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GuideInterface.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/crossPQW\/YYWebImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2B63CCF71525A271478FBA0FCECF929E60AF80A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/summerHearts\/GuideInterface.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "893D3875294CC3DEE988E5BE4E7A10255C85C5B1"
+    }
+  ]
+}

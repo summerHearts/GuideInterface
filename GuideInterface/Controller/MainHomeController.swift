@@ -34,13 +34,27 @@ class MainHomeController:BaseViewController ,UICollectionViewDataSource ,UIColle
          self.collectionView .registerNib(UINib(nibName: "MainHomeCell", bundle: nil), forCellWithReuseIdentifier: mainHomeCellIdentifier)
         self.collectionView.registerClass(mainHomeBannerCell.classForCoder(), forCellWithReuseIdentifier: mainHomeBannerCellIdentifier)
         self.view .addSubview(self.collectionView)
+        
+        let projectUrl = "http://123.57.188.187/eliteall/3187/hosts/openapi/api.php?user_name=15202153577&password=123456&method=eliteall.login&type=login"
+        let error = NSError(domain: "", code: 0, userInfo: nil)
+        
+        //最新网络层封装方法
+        NetworkRequest().fetch(projectUrl)
+            .success { (json) in
+                debugPrint("success")
+                print("JSON: \(json)")
+            }.error({ (statusCode, error) in
+                debugPrint("error")
+            })
+            .request()
+        
         //MJ进行下拉刷新
         self.collectionView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "downRefresh")
         //MJ上拉加载
         self.collectionView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: "upRefresh")
     }
     
-    //下拉刷新
+    //下拉刷新  老的方式
     func downRefresh(){
         let manager = HTTPRequestManager()
         manager.dataRequest(method: HTTPRequestManager.Method.POST, urlString: "XXXXX", parameter: ["hotelid": "450300000069"]){
